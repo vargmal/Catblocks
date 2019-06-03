@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<program>
+  <header>
+    <applicationBuildName></applicationBuildName>
+    <applicationBuildNumber>0</applicationBuildNumber>
+    <applicationBuildType>debug</applicationBuildType>
+    <applicationName>Pocket Code</applicationName>
+    <applicationVersion>0.9.60</applicationVersion>
+    <catrobatLanguageVersion>0.9996</catrobatLanguageVersion>
+    <dateTimeUpload></dateTimeUpload>
+    <description></description>
+    <deviceName>ONEPLUS A5010</deviceName>
+    <isCastProject>false</isCastProject>
+    <landscapeMode>false</landscapeMode>
+    <mediaLicense></mediaLicense>
+    <platform>Android</platform>
+    <platformVersion>28</platformVersion>
+    <programLicense></programLicense>
+    <programName>iii</programName>
+    <remixOf></remixOf>
+    <scenesEnabled>true</scenesEnabled>
+    <screenHeight>2160</screenHeight>
+    <screenMode>STRETCH</screenMode>
+    <screenWidth>1080</screenWidth>
+    <tags></tags>
+    <url></url>
+    <userHandle></userHandle>
+  </header>
+  <settings/>
+  <scenes>
+    <scene>
+      <name>Scene 1</name>
+      <objectList>
+        <object type="Sprite" name="Background">
+          <lookList/>
+          <soundList/>
+          <scriptList/>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+        </object>
+        <object type="Sprite" name="spaceship">
+          <lookList>
+            <look fileName="spaceship.png" name="spaceship"/>
+          </lookList>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript">
+              <brickList>
+                <brick type="NoteBrick">
+                  <commentedOut>false</commentedOut>
+                  <formulaList>
+                    <formula category="NOTE">
+                      <type>STRING</type>
+                      <value>add comment here…</value>
+                    </formula>
+                  </formulaList>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+        </object>
+      </objectList>
+    </scene>
+  </scenes>
+  <programVariableList/>
+  <programListOfLists/>
+</program>
