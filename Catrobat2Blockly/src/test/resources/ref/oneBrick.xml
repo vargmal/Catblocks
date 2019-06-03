@@ -1,13 +1,13 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-    <block type="StartScript" id="" x="" y="">
-        <next>
-            <block type="NoteBrick" id="" x="" y="">
-                <value name="NOTE">
-                    <shadow type="text" id="">
-                        <field name="TEXT">TestComment</field>
-                    </shadow>
-                </value>
-            </block>
-        </next>
-    </block>
+<block type="StartScript" id="" x="" y="">
+<next>
+<block type="NoteBrick" id="" x="" y="">
+  <value name="NOTE">
+    <shadow type="text" id="">
+<field name="TEXT">add comment here…</field>
+    </shadow>
+  </value>
+</block>
+</next>
+</block>
 </xml>
