@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<program>
+  <header>
+    <applicationBuildName/>
+    <applicationBuildNumber>0</applicationBuildNumber>
+    <applicationBuildType>signedRelease</applicationBuildType>
+    <applicationName>Pocket Code</applicationName>
+    <applicationVersion>0.9.64</applicationVersion>
+    <catrobatLanguageVersion>0.99992</catrobatLanguageVersion>
+    <dateTimeUpload/>
+    <description/>
+    <deviceName>ONEPLUS A5000</deviceName>
+    <isCastProject>false</isCastProject>
+    <landscapeMode>false</landscapeMode>
+    <mediaLicense>http://developer.catrobat.org/ccbysa_v4</mediaLicense>
+    <platform>Android</platform>
+    <platformVersion>28</platformVersion>
+    <programLicense>http://developer.catrobat.org/agpl_v3</programLicense>
+    <programName>TestE</programName>
+    <remixOf></remixOf>
+    <scenesEnabled>true</scenesEnabled>
+    <screenHeight>1920</screenHeight>
+    <screenMode>STRETCH</screenMode>
+    <screenWidth>1080</screenWidth>
+    <tags>Experimental</tags>
+    <url>/pocketcode/program/113477</url>
+    <userHandle>HSknight</userHandle>
+  </header>
+  <settings/>
+  <scenes>
+    <scene>
+      <name>Scene 1</name>
+      <objectList>
+        <object type="Sprite" name="Background">
+          <lookList/>
+          <soundList/>
+          <scriptList>
+            <script type="StartScript">
+              <brickList>
+                <brick type="GoToBrick">
+                  <commentedOut>false</commentedOut>
+                  <destinationSprite type="Sprite" name="My actor or object">
+                    <lookList>
+                      <look fileName="My actor or object.png" name="My actor or object"/>
+                    </lookList>
+                    <soundList/>
+                    <scriptList>
+                      <script type="StartScript">
+                        <brickList>
+                          <brick type="ChangeXByNBrick">
+                            <commentedOut>false</commentedOut>
+                            <formulaList>
+                              <formula category="X_POSITION_CHANGE">
+                                <type>NUMBER</type>
+                                <value>10</value>
+                              </formula>
+                            </formulaList>
+                          </brick>
+                        </brickList>
+                        <commentedOut>false</commentedOut>
+                      </script>
+                    </scriptList>
+                    <nfcTagList/>
+                    <userVariables/>
+                    <userLists/>
+                  </destinationSprite>
+                  <spinnerSelection>82</spinnerSelection>
+                </brick>
+              </brickList>
+              <commentedOut>false</commentedOut>
+            </script>
+          </scriptList>
+          <nfcTagList/>
+          <userVariables/>
+          <userLists/>
+        </object>
+        <object reference="../object/scriptList/script/brickList/brick/destinationSprite"/>
+        <object reference="../object/scriptList/script/brickList/brick/destinationSprite"/>
+      </objectList>
+    </scene>
+  </scenes>
+  <programVariableList/>
+  <programListOfLists/>
+</program>

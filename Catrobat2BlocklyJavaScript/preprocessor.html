@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Preprocessor DEV side</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script async type="module">
+    import { prepareXml } from './src/tools/Preprocessor.js';
+
+    const xml = fetch('/../scratch-blocks-develop/tests/jsunit/parser/reference.xml')
+      .then(res => res.text())
+      .then(text => (new DOMParser).parseFromString(text, 'text/xml'))
+      .then(xml => {
+        const preXml = prepareXml(xml);
+        console.log(preXml);
+      });
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
