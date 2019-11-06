@@ -19,29 +19,18 @@ const REF_ATTR = 'reference';
  * @return dom
  */
 export const prepareXml = (xml) => {
-  const derefProgramm = deReference(xml);
+  const derefProgramm = derefXml(xml);
 
   return derefProgramm;
 };
 
 /**
- * Dereference verything in the xml
+ * Dereference entire xml
  * @param {*} xml 
+ * @return XMLDocument
  */
-const deReference = (xml) => {
-  derefObjects(xml);
-  // #TODO: derefScripts
-  //        derefBlocks
-
-  return xml;
-};
-
-/**
- * Dereference objects refs
- * @param {*} xml 
- */
-const derefObjects = (xml) => {
-  let objRefs = xpathToArray(`//${OBJECT_TAG}[@${REF_ATTR}]`, xml, xml); //(xml.evaluate(, xml.firstChild, null, XPathResult.ANY_TYPE, null));
+const derefXml = (xml) => {
+  let objRefs = xpathToArray(`//*[@${REF_ATTR}]`, xml, xml); //(xml.evaluate(, xml.firstChild, null, XPathResult.ANY_TYPE, null));
 
   if (objRefs.length === 0) {
     return;
@@ -73,7 +62,9 @@ const derefObjects = (xml) => {
       node.removeChild(node.lastChild);
     }
   });
-}
+
+  return xml;
+};
 
 /**
  * Evaluate xPath and store result into an array
